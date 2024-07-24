@@ -1,7 +1,8 @@
-import {Link} from "react-router-dom";
+import {Link, Outlet} from "react-router-dom";
 
-function Layout(props) {
+function Layout() {
     return (
+        <>
         <nav>
             <ul>
                 <li>
@@ -13,11 +14,11 @@ function Layout(props) {
                 <li>
                     <Link to="/secondpage">Page2</Link>
                 </li>
-                <li>
-                    <Link to="/about">About</Link>
-                </li>
+
             </ul>
         </nav>
+        <Outlet/>
+        </>
     );
 }
 
