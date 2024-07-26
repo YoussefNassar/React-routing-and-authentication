@@ -17,7 +17,11 @@ const router = createBrowserRouter([
             {
                 index: true,
                 element: <Home/>,
-                // loader: homeLoader(queryClient),
+                loader: () : Object => {
+                    return {
+                        name: "youssef"
+                    }
+                },
             },
             {
                 path: "/firstpage",

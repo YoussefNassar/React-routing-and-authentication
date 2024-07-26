@@ -14,7 +14,6 @@ function Layout() {
                 <li>
                     <Link to="/secondpage">Page2</Link>
                 </li>
-
             </ul>
         </nav>
         <Outlet/>
